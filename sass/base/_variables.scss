@@ -1,0 +1,23 @@
+/* Variables */
+
+$fontLogo: 'Ephesis', cursive;
+$fontPrincipal: 'Open Sans', sans-serif;
+
+/* Listas */
+
+/* Extends */
+
+%animacionPrincipal{
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+/* Maps */
+
+$colores:(
+    negro: #000000,
+    blanco: #FFFFFF,
+    plateado: #E5E5E5,
+    naranja: #FFA10A,
+    azul: #14203E
+);

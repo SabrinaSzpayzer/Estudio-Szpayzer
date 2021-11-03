@@ -1,0 +1,120 @@
+/* UNIVERSAL */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: $fontPrincipal;
+    background-image: url(../imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+/* HEADER */
+
+/* Logo: Título y subtítulo */
+
+.header{
+    background-color: map-get($colores, negro);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__logo__tituloPrincipal{
+        color: map-get($colores, plateado);
+        font-family: $fontLogo;
+        font-weight: 400;
+        font-size: 3rem;
+        text-decoration: none;
+
+        &:hover{
+            color: map-get($colores, plateado);
+        }
+    }
+
+    &__logo__tituloSecundario{
+        color: map-get($colores, plateado);
+        font-weight: 400;
+        font-size: 1rem;
+        font-style: italic;
+        padding-bottom: 0.6rem;
+        @extend %animacionPrincipal;
+        margin-bottom: 0;
+    }
+}
+
+h1{
+    @extend %animacionPrincipal;
+    transition: transform 0.2s;
+
+    &:hover{
+        transform: scale(1.05,1);
+    }
+}
+
+/* Menú */
+
+button{
+    margin: auto;
+}
+
+.bsNav{
+    padding: 0;
+    @extend %animacionPrincipal;
+
+    &__Menu{
+        background-color: map-get($colores, negro);
+
+        &__Boton{
+            background-color: map-get($colores, plateado);
+
+            &:hover{
+                background-color: map-get($colores, naranja);
+            }
+        }
+    }
+}
+
+#bsMenuLink{
+    color: map-get($colores, plateado);
+    font-family: $fontPrincipal;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover{
+        color: map-get($colores, naranja);
+    }
+}
+
+#linkActive{
+    color: map-get($colores, naranja);
+    font-family: $fontPrincipal;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 1024px){
+    
+    /* HEADER */
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+}

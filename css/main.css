@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/* Variables */
+/* Listas */
+/* Extends */
+.header__logo__tituloSecundario, h1, .bsNav {
+  animation: fadeIn;
+  animation-duration: 1s; }
+
+/* Maps */
+/* UNIVERSAL */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url(../imagenes/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top; }
+
+p {
+  margin-bottom: 0; }
+
+/* HEADER */
+/* Logo: Título y subtítulo */
+.header {
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .header__logo__tituloPrincipal {
+    color: #E5E5E5;
+    font-family: "Ephesis", cursive;
+    font-weight: 400;
+    font-size: 3rem;
+    text-decoration: none; }
+    .header__logo__tituloPrincipal:hover {
+      color: #E5E5E5; }
+  .header__logo__tituloSecundario {
+    color: #E5E5E5;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: italic;
+    padding-bottom: 0.6rem;
+    margin-bottom: 0; }
+
+h1 {
+  transition: transform 0.2s; }
+  h1:hover {
+    transform: scale(1.05, 1); }
+
+/* Menú */
+button {
+  margin: auto; }
+
+.bsNav {
+  padding: 0; }
+  .bsNav__Menu {
+    background-color: #000000; }
+    .bsNav__Menu__Boton {
+      background-color: #E5E5E5; }
+      .bsNav__Menu__Boton:hover {
+        background-color: #FFA10A; }
+
+#bsMenuLink {
+  color: #E5E5E5;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center; }
+  #bsMenuLink:hover {
+    color: #FFA10A; }
+
+#linkActive {
+  color: #FFA10A;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center; }
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 1024px) {
+  /* HEADER */
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end; } }

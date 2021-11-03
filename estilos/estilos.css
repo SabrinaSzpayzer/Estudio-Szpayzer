@@ -1,0 +1,462 @@
+/* UNIVERSAL */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(../imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+/* HEADER */
+
+header{
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo: Título y subtítulo */
+
+.header__logo__tituloPrincipal{
+    color: #E5E5E5;
+    font-family: 'Ephesis', cursive;
+    font-weight: 400;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+h1{
+    animation: fadeInLeft;
+    animation-duration: 1s;
+    transition: transform 0.2s;
+}
+
+h1:hover{
+    transform: scale(1.05,1);
+}
+
+.header__logo__tituloPrincipal:hover{
+    color: #E5E5E5;
+}
+
+.header__logo__tituloSecundario{
+    color: #E5E5E5;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: italic;
+    padding-bottom: 0.6rem;
+    animation: fadeInLeft;
+    animation-duration: 1s;
+    margin-bottom: 0;
+}
+
+/* Menú */
+
+button{
+    margin: auto;
+}
+
+.bsNav{
+    padding: 0;
+    animation: fadeInLeft;
+    animation-duration: 1s;
+}
+
+.bsNav__Menu{
+    background-color: #000000;
+}
+
+.bsNav__Menu__Boton{
+    background-color: #E5E5E5;
+}
+
+.bsNav__Menu__Boton:hover{
+    background-color: #FFA10A;
+}
+
+#bsMenuLink{
+    color: #E5E5E5;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#bsMenuLink:hover{
+    color: #FFA10A;
+}
+
+#linkActive{
+    color: #FFA10A;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}    
+
+/* MAIN */
+
+/* Secciones, títulos y texto */
+
+.seccionUno{
+    margin: 9rem 3% 3% 3%;
+    border: groove;
+    border-radius: 0.5rem;
+    padding: 3%;
+    background-color: #E5E5E5;
+    text-align: center;
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+.seccion{
+    margin: 3%;
+    border: groove;
+    border-radius: 0.5rem;
+    padding: 3%;
+    background-color: #E5E5E5;
+    text-align: center;
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+.seccionBootstrapUno{
+    margin: 9rem auto 3% auto;
+    padding: 3%;
+    border: groove;
+    border-radius: 0.5rem;
+    background-color: #E5E5E5;
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+.seccionBootstrapDos{
+    margin: auto;
+    padding: 3%;
+    border: groove;
+    border-radius: 0.5rem;
+    background-color: #E5E5E5;
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+.row{
+    align-items: center;
+}
+
+.tituloGeneral{
+    color: #14203E;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.textoGeneral{
+    color: #14203E;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.subtitulo{
+    color: #14203E;
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* Listas */
+
+.listaGeneral{
+    list-style-position: inside;
+}
+
+ul{
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+/* Imágenes */
+
+img{
+    width: 80%;
+    height: 80%;
+}
+
+.seccionUno__img{
+    margin-top: 1rem;
+}
+
+/* Servicios */
+
+.gridServicios__objeto{
+    border: groove;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* Esquema de Trabajo */
+
+.seccion__articulo{
+    padding: 1rem;
+    border: groove;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Formulario de Contacto */
+
+.formulario__entrada{
+    display: flex;
+    flex-direction: column; 
+}
+
+form label{
+    color: #14203E;
+    font-weight: 400;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+input, textarea, select{
+    width: 90%;
+    height: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-weight: 600;
+    border: none;
+    border-bottom: solid #FFA10A 3px;
+    margin: 0 auto;
+    padding-left: 0.3rem;
+}
+
+textarea{
+    height: 10rem;
+}
+
+.formulario__botones{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 1rem;
+}
+
+input[type="submit"]{
+    background-color: #14203E;
+    font-weight: 600;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 2px outset #FFFFFF; 
+}
+
+input[type="submit"]:hover{
+    background-color: #FFA10A;
+}
+
+input[type="reset"]{
+    background-color: #14203E;
+    font-weight: 600;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-transform: uppercase; 
+    margin: 0 auto;
+    border: 2px outset #FFFFFF;  
+}
+
+input[type="reset"]:hover{
+    background-color: #FFA10A;
+}
+
+/* FOOTER */
+
+footer{
+    color: #E5E5E5;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: #000000;
+    width: 100%;
+    text-align: center;
+}
+
+.footer__list{
+    list-style-type: none;
+    text-align: center;
+}
+
+.footer__list__item a{
+    color: #E5E5E5;
+    text-decoration: none;
+}
+
+.footer__list__item a:hover{
+    color: #FFA10A;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 768px){
+
+    /* MAIN */
+
+    /* Secciones, títulos y texto */
+
+    .seccionUno{
+        margin: 9rem 10% 1% 10%;
+        padding: 1%;
+    }
+
+    .seccion{
+        margin: 1% 10%;
+        padding: 1%;
+    }
+
+    .seccionBootstrapUno{
+        margin: 9rem auto 1% auto;
+        padding: 1%;
+    }
+    
+    .seccionBootstrapDos{
+        margin-bottom: 1%;
+        padding: 1%;
+    }
+
+    .tituloGeneral{
+        text-align: justify;
+    }
+    
+    .textoGeneral{
+        text-align: justify;
+    }
+    
+    .subtitulo{
+        text-align: justify;
+    }
+
+    /* Servicios */
+
+    .gridServicios{
+        display: grid;
+        grid-template-areas: 
+        "gridUno gridDos"
+        "gridTres gridCuatro"
+        "gridCinco gridSeis"
+        "gridSiete gridOcho"
+        "gridNueve gridNueve";
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+
+    .gridUno{
+        grid-area: gridUno;
+    }
+
+    .gridDos{
+        grid-area: gridDos;
+    }
+
+    .gridTres{
+        grid-area: gridTres;
+    }
+
+    .gridCuatro{
+        grid-area: gridCuatro;
+    }
+
+    .gridCinco{
+        grid-area: gridCinco;
+    }
+
+    .gridSeis{
+        grid-area: gridSeis;
+    }
+    
+    .gridSiete{
+        grid-area: gridSiete;
+    }
+
+    .gridOcho{
+        grid-area: gridOcho;
+    }
+
+    .gridNueve{
+        grid-area: gridNueve;
+    }
+
+    /* Imágenes */
+
+    img{
+        width: 50%;
+        height: 50%;
+    }
+
+    .seccionUno__img{
+        width: 40%;
+    }
+
+    /* Formulario de Contacto */
+
+    input, textarea, select{
+        width: 50%;
+    }
+
+    .formulario__botones{
+        width: 50%;
+    }
+
+    /* FOOTER */
+
+    footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer__list{
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    
+    /* HEADER */
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    /* MAIN */
+
+    /* Secciones, títulos y texto */
+
+    .seccionUno{
+        margin: 6.5rem 10% 1% 10%;
+    }
+
+    .seccionBootstrapUno{
+        margin: 6.5rem auto 1% auto;
+    }
+}
+
+
+/* Paleta de colores: https://coolors.co/000000-14203e-ffa10a-e5e5e5-ffffff */
