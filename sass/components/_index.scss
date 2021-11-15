@@ -1,0 +1,17 @@
+/* Index */
+
+.seccionBootstrapUno{
+    margin: 9rem auto 3% auto;
+    padding: 3%;
+    @extend %borde;
+    background-color: map-get($colores, plateado);
+    @extend %animacionPrincipal;
+}
+
+.seccionBootstrapDos{
+    margin: auto;
+    padding: 3%;
+    @extend %borde;
+    background-color: map-get($colores, plateado);
+    @extend %animacionPrincipal;
+}

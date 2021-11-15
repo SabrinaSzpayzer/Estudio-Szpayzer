@@ -26,19 +26,28 @@ body{
     flex-direction: column;
     align-items: center;
 
-    &__logo__tituloPrincipal{
-        color: map-get($colores, plateado);
-        font-family: $fontLogo;
-        font-weight: 400;
-        font-size: 3rem;
-        text-decoration: none;
+    &__logo__h1{
+        @extend %animacionPrincipal;
+        transition: transform 0.2s;
 
         &:hover{
-            color: map-get($colores, plateado);
+            transform: scale(1.05,1);
         }
+
+        &__a{
+            color: map-get($colores, plateado);
+            font-family: $fontLogo;
+            font-weight: 400;
+            font-size: 3rem;
+            text-decoration: none;
+
+            &:hover{
+                color: map-get($colores, plateado);
+            }
+        }        
     }
 
-    &__logo__tituloSecundario{
+    &__logo__h2{
         color: map-get($colores, plateado);
         font-weight: 400;
         font-size: 1rem;
@@ -49,20 +58,7 @@ body{
     }
 }
 
-h1{
-    @extend %animacionPrincipal;
-    transition: transform 0.2s;
-
-    &:hover{
-        transform: scale(1.05,1);
-    }
-}
-
 /* Menú */
-
-button{
-    margin: auto;
-}
 
 .bsNav{
     padding: 0;
@@ -73,6 +69,7 @@ button{
 
         &__Boton{
             background-color: map-get($colores, plateado);
+            margin: auto;
 
             &:hover{
                 background-color: map-get($colores, naranja);
@@ -101,16 +98,122 @@ button{
     text-align: center;
 }
 
-/* MEDIA QUERIES */
+/* MAIN */
 
-@media only screen and (min-width: 1024px){
-    
-    /* HEADER */
+/* Secciones, títulos y texto */
 
-    .header{
+.seccionUno{
+    margin: 9rem 3% 3% 3%;
+    padding: 3%;
+    @extend %borde;   
+    background-color: map-get($colores, plateado);
+    text-align: center;
+    @extend %animacionPrincipal;
+}
+
+.seccion{
+    margin: 3%;
+    padding: 3%;
+    @extend %borde;   
+    background-color: map-get($colores, plateado);
+    text-align: center;
+    @extend %animacionPrincipal;
+}
+
+.row{
+    align-items: center;
+}
+
+.tituloGeneral{
+    color: map-get($colores, azul);
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.textoGeneral{
+    color: map-get($colores, azul);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.subtitulo{
+    color: map-get($colores, azul);
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* Listas */
+
+.listaGeneral{
+    list-style-position: inside;
+}
+
+ul{
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+/* Imágenes */
+
+img{
+    width: 80%;
+    height: 80%;
+}
+
+.seccionUno__img{
+    margin-top: 1rem;
+}
+
+/* FOOTER */
+
+.footer{
+    color: map-get($colores, plateado);
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: map-get($colores, negro);
+    width: 100%;
+    text-align: center;
+
+    &__iconos{
+        list-style-type: none;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-end;
+        justify-content: center;
+        @extend %animacionPrincipal;
+
+        &__item{
+            margin: 1rem;
+
+            &__a{
+                color: map-get($colores, plateado);
+                text-decoration: none;
+
+                &:hover{
+                    color: map-get($colores, naranja);
+                }
+            }
+        }
+    }
+
+    &__mapa{
+        margin: 1rem;
+    }
+
+    &__sitio__item{
+        list-style-type: none;
+        @extend %animacionPrincipal;
+
+        &__a{
+            color: map-get($colores, plateado);
+            text-decoration: none;
+            text-transform: uppercase;
+
+            &:hover{
+                color: map-get($colores, naranja);
+            }
+        }
     }
 }

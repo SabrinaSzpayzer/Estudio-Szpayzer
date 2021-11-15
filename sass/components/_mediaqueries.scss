@@ -1,0 +1,158 @@
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 768px){
+
+    /* MAIN */
+
+    /* Secciones, títulos y texto */
+
+    .seccionUno{
+        margin: 9rem 10% 1% 10%;
+        padding: 1%;
+    }
+
+    .seccion{
+        margin: 1% 10%;
+        padding: 1%;
+    }
+
+    .seccionBootstrapUno{
+        margin: 9rem auto 1% auto;
+        padding: 1%;
+    }
+    
+    .seccionBootstrapDos{
+        margin-bottom: 1%;
+        padding: 1%;
+    }
+
+    .tituloGeneral, .textoGeneral, .subtitulo{
+        text-align: justify;
+    }
+
+    /* Servicios */
+
+    .gridServicios{
+        display: grid;
+        grid-template-areas: 
+        "gridUno gridDos"
+        "gridTres gridCuatro"
+        "gridCinco gridSeis"
+        "gridSiete gridOcho"
+        "gridNueve gridNueve"
+        "gridDiez gridOnce"
+        "gridDoce gridTrece"
+        "gridCatorce gridCatorce";
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+
+    .gridUno{
+        grid-area: gridUno;
+    }
+
+    .gridDos{
+        grid-area: gridDos;
+    }
+
+    .gridTres{
+        grid-area: gridTres;
+    }
+
+    .gridCuatro{
+        grid-area: gridCuatro;
+    }
+
+    .gridCinco{
+        grid-area: gridCinco;
+    }
+
+    .gridSeis{
+        grid-area: gridSeis;
+    }
+    
+    .gridSiete{
+        grid-area: gridSiete;
+    }
+
+    .gridOcho{
+        grid-area: gridOcho;
+    }
+
+    .gridNueve{
+        grid-area: gridNueve;
+    }
+    
+    .gridDiez{
+        grid-area: gridDiez;
+    }
+
+    .gridOnce{
+        grid-area: gridOnce;
+    }
+
+    .gridDoce{
+        grid-area: gridDoce;
+    }
+
+    .gridTrece{
+        grid-area: gridTrece;
+    }
+
+    .gridCatorce{
+        grid-area: gridCatorce;
+    }
+
+    /* Imágenes */
+
+    img{
+        width: 50%;
+        height: 50%;
+    }
+
+    .seccionUno__img{
+        width: 40%;
+    }
+
+    /* Formulario de Contacto */
+
+    .formulario__entrada__input, .formulario__entrada__textarea, .formulario__entrada__select{
+        width: 50%;
+    }
+
+    .formulario__botones{
+        width: 50%;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    
+    /* HEADER */
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    /* MAIN */
+
+    /* Secciones, títulos y texto */
+
+    .seccionUno{
+        margin: 6.5rem 10% 1% 10%;
+    }
+
+    .seccionBootstrapUno{
+        margin: 6.5rem auto 1% auto;
+    }
+}

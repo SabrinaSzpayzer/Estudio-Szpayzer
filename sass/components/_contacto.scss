@@ -1,0 +1,54 @@
+/* Formulario de Contacto */
+
+.formulario__entrada{
+    display: flex;
+    flex-direction: column; 
+
+    &__label{
+        color: map-get($colores, azul);
+        font-weight: 400;
+        margin-top: 1rem;
+        text-transform: uppercase;
+    }
+
+    &__input, &__textarea, &__select{
+        width: 90%;
+        height: 2rem;
+        font-family: $fontPrincipal;
+        color: map-get($colores, negro);
+        background-color: map-get($colores, blanco);
+        font-weight: 600;
+        border: none;
+        border-bottom: solid map-get($colores, naranja) 3px;
+        margin: 0 auto;
+        padding-left: 0.3rem;
+    }
+
+    &__textarea{
+        height: 10rem;
+    }
+}
+
+.formulario__botones{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 1rem;
+}
+
+input[type="submit"]{
+    @extend %botonesContacto; 
+
+    &:hover{
+        background-color: map-get($colores, naranja);
+    }
+}
+
+input[type="reset"]{
+    @extend %botonesContacto;  
+    margin: 0 auto;
+
+    &:hover{
+        background-color: map-get($colores, naranja);
+    }
+}

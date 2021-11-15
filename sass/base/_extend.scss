@@ -4,3 +4,18 @@
     animation: fadeIn;
     animation-duration: 1s;
 }
+
+%borde{
+    border: groove;
+    border-radius: 0.5rem;
+}
+
+%botonesContacto{
+    width: 90%;
+    background-color: map-get($colores, azul);
+    font-weight: 600;
+    color: map-get($colores, blanco);
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 2px outset map-get($colores, blanco);
+}
