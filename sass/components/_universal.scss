@@ -78,24 +78,19 @@ body{
     }
 }
 
-#bsMenuLink{
-    color: map-get($colores, plateado);
-    font-family: $fontPrincipal;
+.nav-link{
+    color: map-get($colores, plateado) !important;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
 
     &:hover{
-        color: map-get($colores, naranja);
+        color: map-get($colores, naranja) !important;
     }
 }
 
-#linkActive{
-    color: map-get($colores, naranja);
-    font-family: $fontPrincipal;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
+.active{
+    color: map-get($colores, naranja) !important;
 }
 
 /* MAIN */
@@ -180,8 +175,7 @@ img{
 
     &__iconos{
         list-style-type: none;
-        display: flex;
-        justify-content: center;
+        padding: 0.1rem;
         @extend %animacionPrincipal;
 
         &__item{

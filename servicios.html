@@ -20,7 +20,8 @@
     <!--Link Logos-->
     <script src="https://kit.fontawesome.com/c3caa97553.js" crossorigin="anonymous"></script>
     <!--Link Animaciones-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--Link CSS-->
@@ -28,7 +29,7 @@
     <title>Estudio Szpayzer | Asesores Externos</title>
 </head>
 <body>
-    <header class="header">    
+    <header class="header">
         <div class="header__logo">
             <h1 class="header__logo__h1"><a class="header__logo__h1__a" href="index.html">Estudio Szpayzer</a></h1>
             <h2 class="header__logo__h2">Ciencias Económicas - Asesores Externos</h2>
@@ -41,19 +42,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" id="bsMenuLink" href="index.html">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="bsMenuLink" href="historia.html">Historia</a>
+                            <a class="nav-link" href="historia.html">Historia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="linkActive" aria-current="page" href="servicios.html">Servicios</a>
+                            <a class="nav-link active" href="servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="bsMenuLink" href="esquematrabajo.html">Esquema de Trabajo</a>
+                            <a class="nav-link" href="esquematrabajo.html">Esquema de Trabajo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="bsMenuLink" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -67,7 +68,7 @@
             <img src="imagenes/imagenoficina3.jpg" class="rounded-pill seccionUno__img" alt="Imagen de una persona trabajando con una laptop, un café y un informe" loading="lazy">
             <div class="gridServicios">
                 <!--Área 1-->
-                <article class="gridUno gridServicios__objeto">
+                <article class="gridUno gridServicios__objeto" data-aos="fade-right" data-aos-duration="1000">
                     <h4 class="subtitulo">Contable</h4>
                     <ul class="listaGeneral">
                         <li class="textoGeneral">Organización y sistematización de la contabilidad.</li>
@@ -76,7 +77,7 @@
                     </ul>
                 </article>
                 <!--Área 2-->
-                <article class="gridDos gridServicios__objeto">
+                <article class="gridDos gridServicios__objeto" data-aos="fade-left" data-aos-duration="1000">
                     <h4 class="subtitulo">Impositiva y Previsional</h4>
                     <ul class="listaGeneral">
                         <li class="textoGeneral">Liquidación de impuestos y anticipos.</li>
@@ -86,7 +87,7 @@
                     </ul>
                 </article>
                 <!--Área 3-->
-                <article class="gridTres gridServicios__objeto">
+                <article class="gridTres gridServicios__objeto" data-aos="fade-right" data-aos-duration="1000">
                     <h4 class="subtitulo">Societaria</h4>
                     <ul class="listaGeneral">
                         <li class="textoGeneral">Constitución y reorganización de todo tipo de sociedades y empresas.</li>
@@ -98,7 +99,7 @@
                     </ul>
                 </article>
                 <!--Área 4-->
-                <article class="gridCuatro gridServicios__objeto">
+                <article class="gridCuatro gridServicios__objeto" data-aos="fade-left" data-aos-duration="1000">
                     <h4 class="subtitulo">Gestión Administrativa</h4>
                     <ul class="listaGeneral">
                         <li class="textoGeneral">Organización administrativa de acuerdo con la operatoria de la empresa.</li>
@@ -108,7 +109,7 @@
                     </ul>
                 </article>
                 <!--Área 5-->
-                <article class="gridCinco gridServicios__objeto">
+                <article class="gridCinco gridServicios__objeto" data-aos="fade-right" data-aos-duration="1000">
                     <h4 class="subtitulo">Gestión Financiera</h4>
                     <ul class="listaGeneral">
                         <li class="textoGeneral">Organización y control de flujos de recursos y sus aplicaciones.</li>
@@ -116,7 +117,7 @@
                     </ul>
                 </article> 
                 <!--Área 6-->
-                <article class="gridSeis gridServicios__objeto">
+                <article class="gridSeis gridServicios__objeto" data-aos="fade-left" data-aos-duration="1000">
                     <h4 class="subtitulo">Conflictos Societarios</h4>
                     <ul class="listaGeneral">
                         <li class="textoGeneral">Defensa de intereses de socios y accionistas.</li>
@@ -124,7 +125,7 @@
                     </ul>
                 </article>
                 <!--Área 7-->
-                <article class="gridSiete gridServicios__objeto">
+                <article class="gridSiete gridServicios__objeto" data-aos="fade-right" data-aos-duration="1000">
                     <h4 class="subtitulo">Auditoría de Gestión</h4>
                     <ul class="listaGeneral">
                         <li class="textoGeneral">Medición y contralor de eficiencia operativa en las distintas áreas.</li>
@@ -132,7 +133,7 @@
                     </ul>
                 </article>
                 <!--Área 8-->
-                <article class="gridOcho gridServicios__objeto">
+                <article class="gridOcho gridServicios__objeto" data-aos="fade-left" data-aos-duration="1000">
                     <h4 class="subtitulo">Evaluación Patrimonial</h4>
                     <ul class="listaGeneral">
                         <li class="textoGeneral">Análisis de situación.</li>
@@ -140,7 +141,7 @@
                     </ul>
                 </article> 
                 <!--Área 9-->
-                <article class="gridNueve gridServicios__objeto">
+                <article class="gridNueve gridServicios__objeto" data-aos="fade-down" data-aos-duration="1000">
                     <h4 class="subtitulo">Outsourcing de Liquidación de Sueldos y Jornales</h4>
                     <p class="textoGeneral">Reduce personal en relación de dependencia y se mantienen los registros actualizados en forma permanente. Nuestros servicios pueden incluir:</p>
                     <ul class="listaGeneral">
@@ -155,7 +156,7 @@
                     </ul>            
                 </article>
                 <!--Área 10-->
-                <article class="gridDiez gridServicios__objeto">
+                <article class="gridDiez gridServicios__objeto" data-aos="fade-right" data-aos-duration="1000">
                     <h4 class="subtitulo">Área Estratégica</h4>
                     <ul class="listaGeneral">
                         <li class="textoGeneral">Análisis competitivo. Cliente. Mercado.</li>
@@ -166,7 +167,7 @@
                     </ul>            
                 </article>
                 <!--Área 11-->
-                <article class="gridOnce gridServicios__objeto">
+                <article class="gridOnce gridServicios__objeto" data-aos="fade-left" data-aos-duration="1000">
                     <h4 class="subtitulo">Área Administrativa</h4>
                     <ul class="listaGeneral">
                         <li class="textoGeneral">Gestión de Mando Integral Contable-Operativo.</li>
@@ -178,7 +179,7 @@
                     </ul>            
                 </article>
                 <!--Área 12-->
-                <article class="gridDoce gridServicios__objeto">
+                <article class="gridDoce gridServicios__objeto" data-aos="fade-right" data-aos-duration="1000">
                     <h4 class="subtitulo">Área Comercial y de Servicios</h4>
                     <ul class="listaGeneral">
                         <li class="textoGeneral">Servicios al cliente. Esquemas logísticos.</li>
@@ -190,7 +191,7 @@
                     </ul>            
                 </article>
                 <!--Área 13-->
-                <article class="gridTrece gridServicios__objeto">
+                <article class="gridTrece gridServicios__objeto" data-aos="fade-left" data-aos-duration="1000">
                     <h4 class="subtitulo">Diagnóstico de Situación y Plan de Mejoras</h4>
                     <ul class="listaGeneral">
                         <li class="textoGeneral">Indicadores de situación.</li>
@@ -203,7 +204,7 @@
                     </ul>            
                 </article> 
                 <!--Área 14-->
-                <article class="gridCatorce gridServicios__objeto">
+                <article class="gridCatorce gridServicios__objeto" data-aos="fade-down" data-aos-duration="1000">
                     <h4 class="subtitulo">Área Industrial</h4>
                     <ul class="listaGeneral">
                         <li class="textoGeneral">Desarrollo de producto. Normalización. Simplificación.</li>
@@ -224,17 +225,19 @@
         <ul class="footer__iconos">
             <li class="footer__iconos__item">            
                 <a href="mailto:estudioszpayzer@gmail.com" title="Acceso directo Mail" class="footer__iconos__item__a">
-                    <i class="fas fa-envelope-square fa-3x"></i>
+                    <i class="fas fa-envelope-square fa-2x"></i>
+                    <p>estudioszpayzer@gmail.com</p> 
                 </a>
             </li>
             <li class="footer__iconos__item">
-                <a href="tel:+4733378901" title="Acceso directo Teléfono" class="footer__iconos__item__a">
-                    <i class="fas fa-phone-square-alt fa-3x"></i>
+                <a href="tel:+5491155555555" title="Acceso directo Teléfono" class="footer__iconos__item__a">
+                    <i class="fas fa-phone-square-alt fa-2x"></i>
+                    <p>+54-9-11-5555-5555</p>
                 </a>
             </li>
             <li class="footer__iconos__item">           
                 <a href="http://www.linkedin.com" target="_blank" title="Acceso directo LinkedIn" class="footer__iconos__item__a">
-                    <i class="fab fa-linkedin fa-3x"></i>
+                    <i class="fab fa-linkedin fa-2x"></i>
                 </a>
             </li>
         </ul>
@@ -256,9 +259,15 @@
             </li>
         </ul>    
         <div class="footer__mapa">
+            <p>Av. Corrientes 1234 | CABA | Argentina</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.005403746375!2d-58.386352784236806!3d-34.60402486502242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5dd595589%3A0xcc91d385c40fd71e!2sAv.%20Corrientes%201234%2C%20C1043AAZ%20CABA!5e0!3m2!1ses!2sar!4v1632597257292!5m2!1ses!2sar" width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </footer>
+    <!--Link AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!--Link Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

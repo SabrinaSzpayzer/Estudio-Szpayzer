@@ -74,21 +74,16 @@ body {
       .bsNav__Menu__Boton:hover {
         background-color: #FFA10A; }
 
-#bsMenuLink {
-  color: #E5E5E5;
-  font-family: "Open Sans", sans-serif;
+.nav-link {
+  color: #E5E5E5 !important;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center; }
-  #bsMenuLink:hover {
-    color: #FFA10A; }
+  .nav-link:hover {
+    color: #FFA10A !important; }
 
-#linkActive {
-  color: #FFA10A;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: center; }
+.active {
+  color: #FFA10A !important; }
 
 /* MAIN */
 /* Secciones, títulos y texto */
@@ -152,8 +147,7 @@ img {
   text-align: center; }
   .footer__iconos {
     list-style-type: none;
-    display: flex;
-    justify-content: center; }
+    padding: 0.1rem; }
     .footer__iconos__item {
       margin: 1rem; }
       .footer__iconos__item__a {
