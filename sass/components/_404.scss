@@ -1,0 +1,15 @@
+/* Error 404 */
+
+.error404{
+    color: map-get($colores, negro);
+    font-weight: 600;
+}
+
+.error404Link{
+    color: map-get($colores, azul);
+    font-weight: 600;
+
+    &:hover{
+        color: map-get($colores, naranja);
+    }
+}

@@ -224,6 +224,17 @@ input[type="reset"] {
   input[type="reset"]:hover {
     background-color: #FFA10A; }
 
+/* Error 404 */
+.error404 {
+  color: #000000;
+  font-weight: 600; }
+
+.error404Link {
+  color: #14203E;
+  font-weight: 600; }
+  .error404Link:hover {
+    color: #FFA10A; }
+
 /* MEDIA QUERIES */
 @media only screen and (min-width: 768px) {
   /* MAIN */
