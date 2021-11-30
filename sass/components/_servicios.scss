@@ -4,4 +4,8 @@
     @extend %borde;
     padding: 1rem;
     margin-top: 1rem;
+
+    &:hover{
+        background-color: darken(map-get($colores, plateado), 2%)
+    }
 }
